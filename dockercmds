@@ -1,0 +1,17 @@
+Add below properties to the Docker Engine
+"dns": [
+    "127.0.0.1",
+    "8.8.8.8"
+  ]
+  
+Add nuget.config to the solution dir dotnet new nugetconfig 
+
+docker images -a
+docker rmi Image Image
+
+docker rm ID_or_Name ID_or_Name
+docker run --rm image_name
+	
+docker-compose logs -f
+docker logs 26a4be5d7025
+docker logs 26a4be5d7025 -n 20
